@@ -1,4 +1,17 @@
-*.lck
-
 ESPPROG-TC2050-Adapter-backups/
+fetchComponent.py
+
+fp-info-cache
+# kicad 
+*-bak
+*-backups
+*-cache*
+*-bak*
+_autosave*
+\#auto_saved_files\#
+*.lck
+output/
 outputs/
+bom/
+production/
+
