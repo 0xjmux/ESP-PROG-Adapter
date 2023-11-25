@@ -6,8 +6,10 @@ Simple PCB that sits on top of the ESP-PROG and enables you to use either the SO
 * This enables you to use component-less programming footprints easily on your ESP-based projects.   
 
 ## Notes and Usage
+* This board uses several custom footprints; they should be embedded in the design files, but will be uploaded to a separate repository soon™.
 * Schematic, BOM, Gerbers, and all other files needed for production and assembly can be found attached to the latest [release!](https://github.com/0xjmux/ESP-PROG-Adapter/releases/latest)
 * This includes an interactive HTML BOM, which makes hand assembly much easier. 
+* 
 
 ## Versions
 ### V1.2 - JTAG arrives!
@@ -24,3 +26,6 @@ Simple PCB that sits on top of the ESP-PROG and enables you to use either the SO
 
 
 ### V1.1 - Redesign with more accurate dimensions
+
+[ to be added later ]
+
