@@ -14,8 +14,10 @@ Simple PCB that sits on top of the ESP-PROG and enables you to use either the SO
 * This enables you to use component-less programming footprints easily on your ESP-based projects (and anything using UART).
 * All the info you need about the connector can be found in the [schematic!](files/esp-prog-adapter-v1.3-sch.pdf)
 
+> [!NOTE]
+> Schematic, BOM, Gerbers, and all other files needed for production and assembly can be found attached to the latest [release!](https://github.com/0xjmux/ESP-PROG-Adapter/releases/latest)
+
 ## Notes and Usage
-* Schematic, BOM, Gerbers, and all other files needed for production and assembly can be found attached to the latest [release!](https://github.com/0xjmux/ESP-PROG-Adapter/releases/latest)
 * This includes an interactive HTML BOM, in case you need it for assembly. 
 * Symbols to easily connect the SOICbite footprint to your custom designs can be found in [jmux-kicad-things](https://github.com/0xjmux/jmux-kicad-things)
 
