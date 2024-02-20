@@ -1,4 +1,4 @@
-# ESP-PROG Programming Cable Adapter
+# ESP-Prog Programming Cable Adapter
 
 ![License](https://img.shields.io/badge/licence-CERN%20OHL%20v2-blue)
 ![GitHub last commit](https://img.shields.io/github/last-commit/0xjmux/ESP-PROG-Adapter.svg)
@@ -47,8 +47,8 @@ Example of SOICBite UART connector symbol.
 ## Hardware Setup/Soldering
 The board comes with optional swappable UART jumpers. If this feature is not needed, simply solder the two solderjumpers (JP5 & JP6) that connect UART normally. 
 
-> [!NOTE]
-> IMPORTANT: You MUST either bridge the solderjumpers or install the pin headers. If you don't, the UART interface won't be connected. 
+> [!IMPORTANT]
+> You must either bridge the solderjumpers or install the pin headers. If you don't do either, the UART interface won't be connected. 
 
 ### Components
 
@@ -85,10 +85,10 @@ I recommend going from shortest to tallest components by height, PCB top side fi
 
  
 <p align="center">
-<img alt="v1.4 PCB Render ISO angle" src="files/esp-prog-adapter-v1.4-Render_ISO_RayT.png" height="300" />
-<img alt="v1.4 PCB Render Front" src="files/esp-prog-adapter-v1.4-Render_F_RayT.png" height="300" />
-<img alt="v1.4 PCB Render Back" src="files/esp-prog-adapter-v1.4-Render_B_RayT.png" height="300" />
-<img alt="v1.4 PCB Layout" src="files/esp-prog-adapter-v1.4-PCB_F.png" height="300" />
+<img alt="v1.4 PCB Render ISO angle" src="files/esp-prog-adapter-v1.4-Render_ISO_RayT.png" height="280" />
+<img alt="v1.4 PCB Render Front" src="files/esp-prog-adapter-v1.4-Render_F_RayT.png" height="280" />
+<img alt="v1.4 PCB Render Back" src="files/esp-prog-adapter-v1.4-Render_B_RayT.png" height="280" />
+<img alt="v1.4 PCB Layout" src="files/esp-prog-adapter-v1.4-PCB_F.png" height="280" />
 </p>
 
 
@@ -99,10 +99,10 @@ I recommend going from shortest to tallest components by height, PCB top side fi
 * Added notes to the schematic to make pinouts clear for anyone reading it, so similar symbol/footprint orientation mistakes aren't made again.
  
 <p align="center">
-<img alt="v1.3 PCB Render Back" src="files/esp-prog-adapter-v1.3-render-iso1.png" height="300" />
-<img alt="v1.3 PCB Render Front" src="files/esp-prog-adapter-v1.3-render-F.png" height="300" />
-<img alt="v1.3 PCB Render Back" src="files/esp-prog-adapter-v1.3-render-B.png" height="300" />
-<img alt="v1.3 PCB Layout" src="files/esp-prog-adapter-v1.3-PCB_F.png" height="300" />
+<img alt="v1.3 PCB Render Back" src="files/esp-prog-adapter-v1.3-render-iso1.png" height="280" />
+<img alt="v1.3 PCB Render Front" src="files/esp-prog-adapter-v1.3-render-F.png" height="280" />
+<img alt="v1.3 PCB Render Back" src="files/esp-prog-adapter-v1.3-render-B.png" height="280" />
+<img alt="v1.3 PCB Layout" src="files/esp-prog-adapter-v1.3-PCB_F.png" height="280" />
 </p>
  
 ---
