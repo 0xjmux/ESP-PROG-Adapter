@@ -5,17 +5,17 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date/0xjmux/ESP-PROG-Adapter.svg)
 ![GitHub release](https://img.shields.io/github/release/0xjmux/ESP-PROG-Adapter.svg)
 
-Simple PCB that sits on top of the ESP-Prog and enables you to use either the SOICbite or Tag-Connect TC2050-IDC to program your ESP-based projects.
+Simple PCB that sits on top of the ESP-Prog to use the SOICbite and Tag-Connect TC2050-IDC adapters to program and debug ESP-based projects.
  
 <p align="center">
 <img alt="ISO view of adapter" src="files/adapter_v1.3_iso.jpg" width="400" />
 <img alt="ISO view of adapter on ESP-Prog" src="files/adapter_v1.3_on_espprog_iso.jpg" width="400" />
 </p>
 
-I made this because I was in need of a hardware debugging solution for my ESP-based projects, and was tired of the dupont wire mess I needed to connect my programming cable to my adapter.
+I made this because I was in need of a hardware debugging solution for my ESP-based projects, and was tired of the dupont wire mess I needed to connect my programming cable to my JTAG adapter. 
  
 ## Features
-* Easily connect your TC-2050-IDC and SOICbite programming cables to the ESP-PROG for JTAG and UART programming. 
+* Easily connect your TC-2050-IDC and SOICbite programming cables to the ESP-Prog for JTAG and UART programming. 
     * This enables you to easily integrate component-less programming footprints with your ESP-based projects (and anything else using UART).
 * Includes reversible UART TX/RX so if you mess it up on your board, you can easily change it on your adapter!
 * Onboard SOICBite "loopback" footprint with TX-RX pins connected, allowing you to easily confirm UART is working. 
@@ -68,7 +68,7 @@ If you found the work I put into this valuable, I'd appreciate if you could buy 
 </p>
 
 ### Soldering Order
-I recommend going from shortest to tallest components by height, PCB top side first. This is a very approachable solder job since everything is THT, but when attaching the headers that connect to the ESP-PROG there is the potential to burn the plastic of the connectors already installed on the top. Here's the order I recommend attaching the components:
+I recommend going from shortest to tallest components, starting on the top side of the PCB. This is a very approachable solder job since everything is THT, but when attaching the headers that connect to the ESP-PROG there is the potential to burn the plastic of the connectors already installed on the top. Here's the order I recommend attaching the components:
 
 1. TC2050 IDC Socket
 1. 2x3 Pin header and SOICbite socket(s)
@@ -91,6 +91,7 @@ I recommend going from shortest to tallest components by height, PCB top side fi
 <img alt="v1.4 PCB Layout" src="files/esp-prog-adapter-v1.4-PCB_F.png" width="375" />
 </p>
 
+---
 
 ### V1.3 - Redesigned (Again)
 * Added headers that allow you to easily reverse UART TX-RX in case it was mixed up on the board you're testing. Just cut the solderjumpers on the bottom of the board, add header pins to the top, and the direction is now easily changeable. The bolded text indicates the default direction. 
@@ -118,6 +119,7 @@ I recommend going from shortest to tallest components by height, PCB top side fi
 <img alt="v1.2 PCB Layout" src="files/esp-prog-adapter-v1.2-PCB_F.png" height="300" />
 </p>
 
+---
 
 ## References
 * This project was inspired by BrechtVE's very cool [Universal J-Link adapter](https://github.com/Fescron/universal-jlink-adapter), which I was originally planning on using. Segger's discontinuation of the J-Link EDU left me in search of other options since the EDU mini doesn't support the ESP's Xtensa LX7 architecture, which is how I landed on the ESP-Prog.
