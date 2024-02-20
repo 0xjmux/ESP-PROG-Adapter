@@ -87,8 +87,8 @@ I recommend going from shortest to tallest components by height, PCB top side fi
 <p align="center">
 <img alt="v1.4 PCB Render ISO angle" src="files/esp-prog-adapter-v1.4-Render_ISO_RayT.png" height="280" />
 <img alt="v1.4 PCB Render Front" src="files/esp-prog-adapter-v1.4-Render_F_RayT.png" height="280" />
-<img alt="v1.4 PCB Render Back" src="files/esp-prog-adapter-v1.4-Render_B_RayT.png" height="280" />
-<img alt="v1.4 PCB Layout" src="files/esp-prog-adapter-v1.4-PCB_F.png" height="280" />
+<img alt="v1.4 PCB Render Back" src="files/esp-prog-adapter-v1.4-Render_B_RayT.png" width="400" />
+<img alt="v1.4 PCB Layout" src="files/esp-prog-adapter-v1.4-PCB_F.png" width="375" />
 </p>
 
 
@@ -99,8 +99,8 @@ I recommend going from shortest to tallest components by height, PCB top side fi
 * Added notes to the schematic to make pinouts clear for anyone reading it, so similar symbol/footprint orientation mistakes aren't made again.
  
 <p align="center">
-<img alt="v1.3 PCB Render Back" src="files/esp-prog-adapter-v1.3-render-iso1.png" height="280" />
-<img alt="v1.3 PCB Render Front" src="files/esp-prog-adapter-v1.3-render-F.png" height="280" />
+<img alt="v1.3 PCB Render Back" src="files/esp-prog-adapter-v1.3-render-iso1.png" height="260" />
+<img alt="v1.3 PCB Render Front" src="files/esp-prog-adapter-v1.3-render-F.png" height="260" />
 <img alt="v1.3 PCB Render Back" src="files/esp-prog-adapter-v1.3-render-B.png" height="280" />
 <img alt="v1.3 PCB Layout" src="files/esp-prog-adapter-v1.3-PCB_F.png" height="280" />
 </p>
@@ -109,12 +109,12 @@ I recommend going from shortest to tallest components by height, PCB top side fi
 
 ### V1.2 - JTAG arrives!
 * Added JTAG compatibility headers, extended size of board. 
-* Got the footprints wrong and waited forever to order them, they didn't work :(
+* The time between designing and ordering this version was on the order of months. Once I ordered it, I realized I had mixed up the pin ordering on the footprints, and needed to modify the schematic. 
 * SOICbite connector wasn't oriented right. 
 
 <p align="center">
-<img alt="v1.2 PCB Render Front" src="files/esp-prog-adapter-v1.2-Render_F_RayT.png" height="300" />
-<img alt="v1.2 PCB Render Back" src="files/esp-prog-adapter-v1.2-Render_B_RayT.png" height="300" />
+<img alt="v1.2 PCB Render Front" src="files/esp-prog-adapter-v1.2-Render_F_RayT.png" height="260" />
+<img alt="v1.2 PCB Render Back" src="files/esp-prog-adapter-v1.2-Render_B_RayT.png" height="260" />
 <img alt="v1.2 PCB Layout" src="files/esp-prog-adapter-v1.2-PCB_F.png" height="300" />
 </p>
 
