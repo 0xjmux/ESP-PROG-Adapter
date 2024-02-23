@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ESP-EZ-Debug")(type "KiCad")(uri "/home/jmux/Github/ESP-PROG-Adapter/REPO-ESP-PROG-Adapter/ESP-EZ-Debug-KicadLib/symbols/ESP-EZ-Debug.kicad_sym")(options "")(descr ""))
+)

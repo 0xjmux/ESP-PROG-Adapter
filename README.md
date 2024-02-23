@@ -1,9 +1,19 @@
-# ESP-Prog Programming Cable Adapter
-
+# ESP32 Firmware Debugging, as Easy as Possible
 ![License](https://img.shields.io/badge/licence-CERN%20OHL%20v2-blue)
 ![GitHub last commit](https://img.shields.io/github/last-commit/0xjmux/ESP-PROG-Adapter.svg)
 ![GitHub Release Date](https://img.shields.io/github/release-date/0xjmux/ESP-PROG-Adapter.svg)
 ![GitHub release](https://img.shields.io/github/release/0xjmux/ESP-PROG-Adapter.svg)
+
+One of the things I've noticed in a lot of beginner ESP32 PCBs is a lack of hardware debugging interfaces, which is understandable since setting up JTAG can be a bit confusing when you're first exposed to it. This project's goal is to make using JTAG and connector-less footprints on your PCBs as easy and cheap as possible. 
+
+#### To get started, all you need is: 
+1. An ESP-Prog, Espressif's cheap and flexible UART and JTAG adapter - [Aliexpress, ~$11 US](https://s.click.aliexpress.com/e/_DnkCFmz)
+1. SOIC-8 Clip programming cable for SOICbite - [Aliexpress, ~$3](https://www.aliexpress.us/item/3256805091794484.html)
+1. My adapter PCB and [connectors](#Components) ordered from your favorite PCB house ([Gerbers found under releases](https://github.com/0xjmux/ESP-PROG-Adapter/releases)) - ~$6 with connectors
+1. My Kicad library (found under [ESP-EZ-Debug-KicadLib/](./ESP-EZ-Debug-KicadLib)) to easily include connector-less footprints in your Kicad designs. 
+
+
+## ESP-Prog Programming Cable Adapter
 
 Simple PCB that sits on top of the ESP-Prog to use the SOICbite and Tag-Connect TC2050-IDC adapters to program and debug ESP-based projects.
  
@@ -12,7 +22,7 @@ Simple PCB that sits on top of the ESP-Prog to use the SOICbite and Tag-Connect 
 <img alt="ISO view of adapter on ESP-Prog" src="files/adapter_v1.3_on_espprog_iso.jpg" width="400" />
 </p>
 
-I made this because I was in need of a hardware debugging solution for my ESP-based projects, and was tired of the dupont wire mess I needed to connect my programming cable to my JTAG adapter. 
+I originally made this adapter because I was in need of a hardware debugging solution for my ESP-based projects, and was tired of the dupont wire mess I needed to connect my programming cable to my JTAG adapter. 
  
 ## Features
 * Easily connect your TC-2050-IDC and SOICbite programming cables to the ESP-Prog for JTAG and UART programming. 
@@ -36,13 +46,22 @@ I made this because I was in need of a hardware debugging solution for my ESP-ba
 <br>SOICBite UART loopback usage (left) and top view of adapter on ESP-Prog (right)
 </p>
 
-## Notes and Usage
-* I've created symbols to easily integrate the SOICBite and Tag-Connect within your ESP32-based projects, which can be found in [jmux-kicad-things](https://github.com/0xjmux/jmux-kicad-things). These schematic symbols follow the standard pinouts for each connector and are designed to be as self-explanatory as possible. 
+## How to Use
+* To make using these in your projects as easy as possible, I've created a mini project library with Symbols under `ESP-EZ-Debug-KicadLib`. 
+* These schematic symbols follow the [standard pinouts](https://github.com/SimonMerrett/SOICbite/tree/master?tab=readme-ov-file#pin-assignment) for each connector and are designed to be as self-explanatory as possible. There's an image example of connector wiring below, along with `UsageExamples.kicad_sch` which lets you directly copy and paste into your designs. 
+    * My symbols were originally just in my personal collection of Kicad symbols and footprints, which can be found here -  [jmux-kicad-things](https://github.com/0xjmux/jmux-kicad-things). 
+
+> ![NOTE]
+> For information on installing and using the Kicad library, see [ESP-EZ-Debug-KicadLib/README.md](ESP-EZ-Debug-KicadLib/)
 
 <p align="center">
-<img alt="" src="files/ProgConn-SOICBite-Symbol-Example.png" width="400" /><br>
-Example of SOICBite UART connector symbol. 
+<img alt="" src="files/SymbolConnectionExamples.png"/><br>
+Examples of how to wire up each connector to an ESP32
 </p>
+
+#### Software: Setting up Debugging with ESP-IDF and VSCode
+* [This configuration note for the ESP-IDF VSCode extension](https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/DEBUGGING.md) is very helpful for setting up the IDE for hardware debugging
+* [Espressif's documentation page on JTAG debugging for the ESP32](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/jtag-debugging/index.html#how-it-works)
 
 ## Hardware Setup/Soldering
 The board comes with optional swappable UART jumpers. If this feature is not needed, simply solder the two solderjumpers (JP5 & JP6) that connect UART normally. 
@@ -123,3 +142,8 @@ I recommend going from shortest to tallest components, starting on the top side 
 
 ## References
 * This project was inspired by BrechtVE's very cool [Universal J-Link adapter](https://github.com/Fescron/universal-jlink-adapter), which I was originally planning on using. Segger's discontinuation of the J-Link EDU left me in search of other options since the EDU mini doesn't support the ESP's Xtensa LX7 architecture, which is how I landed on the ESP-Prog.
+
+
+---
+
+The goal here is to make the joy of firmware debugging as easy to approach as possible; if you have any suggestions, please feel free to open a PR. 
