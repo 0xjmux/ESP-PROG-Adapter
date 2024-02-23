@@ -47,11 +47,10 @@ I originally made this adapter because I was in need of a hardware debugging sol
 </p>
 
 ## How to Use
-* To make using these in your projects as easy as possible, I've created a mini project library with Symbols under `ESP-EZ-Debug-KicadLib`. 
-* These schematic symbols follow the [standard pinouts](https://github.com/SimonMerrett/SOICbite/tree/master?tab=readme-ov-file#pin-assignment) for each connector and are designed to be as self-explanatory as possible. There's an image example of connector wiring below, along with `UsageExamples.kicad_sch` which lets you directly copy and paste into your designs. 
-    * My symbols were originally just in my personal collection of Kicad symbols and footprints, which can be found here -  [jmux-kicad-things](https://github.com/0xjmux/jmux-kicad-things). 
+* To make using these in your projects as easy as possible, I've created a Kicad library under `ESP-EZ-Debug-KicadLib/`. 
+* These schematic symbols follow the [standard pinouts](https://github.com/SimonMerrett/SOICbite/tree/master?tab=readme-ov-file#pin-assignment) for each connector and are designed to be as self-explanatory as possible. There's an image example of connector wiring below, along with `UsageExamples.kicad_sch` so you can directly copy and paste into your designs. 
 
-> ![NOTE]
+> [!NOTE]
 > For information on installing and using the Kicad library, see [ESP-EZ-Debug-KicadLib/README.md](ESP-EZ-Debug-KicadLib/)
 
 <p align="center">
@@ -147,3 +146,8 @@ I recommend going from shortest to tallest components, starting on the top side 
 ---
 
 The goal here is to make the joy of firmware debugging as easy to approach as possible; if you have any suggestions, please feel free to open a PR. 
+
+<br>
+<p align="center">
+<a href='https://ko-fi.com/S6S6UPC2G' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a><br>
+</p>
