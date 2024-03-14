@@ -1,4 +1,4 @@
-# Project Library with Necessary footprints & symbols
+# ESP-EZ-Debug Library
 
 This is a quick library I threw together to make adding this to Kicad projects as easy as possible. 
 

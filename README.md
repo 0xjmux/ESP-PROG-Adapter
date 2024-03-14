@@ -4,6 +4,8 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date/0xjmux/ESP-PROG-Adapter.svg)
 ![GitHub release](https://img.shields.io/github/release/0xjmux/ESP-PROG-Adapter.svg)
 
+* [My blog post about this project](https://jacobbokor.com/posts/esp-jtag-adapter/)
+
 One of the things I've noticed in a lot of beginner ESP32 PCBs is a lack of hardware debugging interfaces, which is understandable since setting up JTAG can be a bit confusing when you're first exposed to it. This project's goal is to make using JTAG and connector-less footprints on your PCBs as easy and cheap as possible. 
 
 #### To get started, all you need is: 
@@ -27,8 +29,8 @@ I originally made this adapter because I was in need of a hardware debugging sol
 ## Features
 * Easily connect your TC-2050-IDC and SOICbite programming cables to the ESP-Prog for JTAG and UART programming. 
     * This enables you to easily integrate component-less programming footprints with your ESP-based projects (and anything else using UART).
-* Includes reversible UART TX/RX so if you mess it up on your board, you can easily change it on your adapter!
-* Onboard SOICBite "loopback" footprint with TX-RX pins connected, allowing you to easily confirm UART is working. 
+* Includes reversible UART TX/RX so if you mess it up on your board, you can easily change it on the adapter!
+* Onboard SOICBite "loopback" footprint with TX-RX pins connected, allowing you to easily confirm your adapter's UART is working. 
 * Detailed [schematic](files/esp-prog-adapter-v1.3-sch.pdf) containing all info you might need about the adapter, and easy to use schematic symbols (see [jmux-kicad-things](https://github.com/0xjmux/jmux-kicad-things)) for using the connectors in your designs. 
 
 > [!NOTE]
