@@ -1,0 +1,257 @@
+(footprint "TC-2050-IDC-SOCKET"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "J3"
+		(at 0.762 7.112 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8bb54133-fc22-44cf-a94f-a1716162a4b9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DebugHeader_Cortex-M_JTAG_10p_TagConnect"
+		(at 0.762 8.612 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9eb1fec2-6e5a-49ab-bb88-ef156b91f014")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "94eda7c3-acdc-4c2a-845b-36d64b6f78ee")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a3dab3c2-7bda-460e-af77-a6f48222649c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Modified J-Link 10-pin Needle Cortex-M JTAG header"
+		(at 117.2684 63.994 -90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bcf519d1-d19e-414a-ba87-7bb14dbd3ccb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC" "C2962228"
+		(at 0 0 -90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "33af159e-77ee-475a-8992-0b716a85d45d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3.9 -9.9)
+		(end -3.9 -7.9)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0ed4371f-ea11-458d-af25-3398cb8f0f8c")
+	)
+	(fp_line
+		(start -3.9 -9.9)
+		(end -0.15 -9.9)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6262ca35-68a9-49ab-baa0-e108da2f8cd0")
+	)
+	(fp_line
+		(start -3.9 -3.2)
+		(end -3.9 -5.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4784dbf3-b11e-40f5-8b27-095fe49fcdd8")
+	)
+	(fp_line
+		(start -3.85 -3.2)
+		(end -0.15 -3.2)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c210d4e3-87c8-400c-aa8c-05662e5d7d2f")
+	)
+	(fp_line
+		(start -0.15 -9.9)
+		(end -0.15 -3.2)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7f9e876e-5f40-409b-a2f8-c12c7684f2c1")
+	)
+	(fp_rect
+		(start -4.9 -12.6)
+		(end 0.7 -0.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "5410a1c7-6c08-41e2-bfdb-9ee30c0f090b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -2.029 -6.5716 -90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "06e31ee0-ea1b-49fb-a46c-f10a307babc1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.762 10.112 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "855de68e-26ae-47ff-bb35-a3df2bd9f247")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -2.664 -9.1116)
+		(size 1 1)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cd8d9542-53fa-43ae-8bdc-9b31f3998ac9")
+	)
+	(pad "2" thru_hole oval
+		(at -2.664 -7.8416)
+		(size 1 1)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9a5630ac-e24b-4051-ad08-ad716b4a67b7")
+	)
+	(pad "3" thru_hole oval
+		(at -2.664 -6.5716)
+		(size 1 1)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d84ec8bd-82f6-4fdc-92f9-6950862c5967")
+	)
+	(pad "4" thru_hole oval
+		(at -2.664 -5.3016)
+		(size 1 1)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "787e0d94-4667-4acc-96de-333601492678")
+	)
+	(pad "5" thru_hole oval
+		(at -2.664 -4.0316)
+		(size 1 1)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "751c8d9f-197c-4b6a-b5b6-b657f2326c4e")
+	)
+	(pad "6" thru_hole oval
+		(at -1.394 -4.0316)
+		(size 1 1)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "929ee81c-04be-4689-ae91-50a29f9ed8d3")
+	)
+	(pad "7" thru_hole oval
+		(at -1.394 -5.3016)
+		(size 1 1)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "06d594ff-6586-4c76-8004-ada5eacab0df")
+	)
+	(pad "8" thru_hole oval
+		(at -1.394 -6.5716)
+		(size 1 1)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6464bb2b-b0dc-4080-944d-f522c0c65da0")
+	)
+	(pad "9" thru_hole oval
+		(at -1.394 -7.8416)
+		(size 1 1)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f227c0ae-0df7-4e98-aa6b-55d29350db41")
+	)
+	(pad "10" thru_hole oval
+		(at -1.394 -9.1116)
+		(size 1 1)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0516014f-acc3-467d-82b8-47e42a637fcb")
+	)
+	(model ":KICAD7_3DMODEL_DIR:Connector_IDC.3dshapes/IDC-Header_2x05_P2.54mm_Vertical.wrl"
+		(offset
+			(xyz -2.5 9 -1)
+		)
+		(scale
+			(xyz 0.5 0.5 0.5)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

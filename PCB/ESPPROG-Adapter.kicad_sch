@@ -5623,7 +5623,7 @@
 				)
 			)
 		)
-		(property "Footprint" "jmux-footprints:TC-2050-IDC-SOCKET"
+		(property "Footprint" "ESP-EZ-Debug:TC-2050-IDC-SOCKET"
 			(at 148.59 100.33 0)
 			(effects
 				(font
@@ -5660,6 +5660,15 @@
 			)
 		)
 		(property "Link" "https://www.lcsc.com/product-detail/IDC-Connectors_XKB-Connectivity-X1270WV-2x05A-6TV01_C2962228.html"
+			(at 160.02 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" ""
 			(at 160.02 102.87 0)
 			(effects
 				(font
