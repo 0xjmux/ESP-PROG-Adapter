@@ -5,6 +5,7 @@
 ![GitHub release](https://img.shields.io/github/release/0xjmux/ESP-PROG-Adapter.svg)
 
 * [My blog post about this project](https://jacobbokor.com/posts/esp-jtag-adapter/)
+* [Look ma, I was featured on Hackaday!](https://hackaday.com/2024/04/03/esp-prog-adapter-makes-your-esp32-tinkering-seamless/)
 
 One of the things I've noticed in a lot of beginner ESP32 PCBs is a lack of hardware debugging interfaces, which is understandable since setting up JTAG can be a bit confusing when you're first exposed to it. This project's goal is to make using JTAG and connector-less footprints on your PCBs as easy and cheap as possible. 
 
@@ -59,6 +60,20 @@ I originally made this adapter because I was in need of a hardware debugging sol
 <img alt="" src="files/SymbolConnectionExamples.png"/><br>
 Examples of how to wire up each connector to an ESP32
 </p>
+
+#### Pinouts
+* The SOICBite UART connector follows the [standard pinout](https://github.com/SimonMerrett/SOICbite/tree/master?tab=readme-ov-file#pin-assignment). There wasn't a JTAG pinout already, so [I contributed one](https://github.com/SimonMerrett/SOICbite/pull/26) - although as of April 2024 it hasn't been merged into the repo. Because it hasn't been merged in, here's a pinout table. 
+
+| Pin | ESP8266     | JTAG |
+| --- | ----------- | ---- |
+| 1   | Vcc         | Vcc  |
+| 2   | GPIO0       | TMS  |
+| 3   | GPIO2       | TCK  |
+| 4   | GND         | GND  |
+| 5   | RX          | TDI  |
+| 6   | TX          | TDO  |
+| 7   | CH_PD       | RTCK |
+| 8   | RST         | NRST |
 
 #### Software: Setting up Debugging with ESP-IDF and VSCode
 * [This configuration note for the ESP-IDF VSCode extension](https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/DEBUGGING.md) is very helpful for setting up the IDE for hardware debugging

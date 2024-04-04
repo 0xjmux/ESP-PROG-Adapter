@@ -5,6 +5,7 @@ Symbol_Usage_Examples/
 fp-info-cache
 # kicad 
 *-bak
+*.bak
 *-backups
 *-cache*
 *-bak*
